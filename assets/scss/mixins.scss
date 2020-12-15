@@ -1,0 +1,12 @@
+@mixin on-hover {
+  @media (hover: hover) {
+    &:hover {
+      @content;
+    }
+  }
+}
+@mixin only-non-touch {
+  @media (hover: hover) {
+    @content;
+  }
+}

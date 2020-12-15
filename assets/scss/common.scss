@@ -1,0 +1,8 @@
+@import "reset";
+@import "~assets/scss/variables";
+:lang(en) {
+  @import "lang/en";
+}
+:lang(vi) {
+  @import "lang/vi";
+}
