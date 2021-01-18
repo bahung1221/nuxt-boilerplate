@@ -1,0 +1,76 @@
+@import "reset";
+@import "variables";
+
+body, html {
+  font-family: $font-family;
+  font-size: 14px;
+  line-height: 1.5;
+  font-weight: 300;
+  width: 100%;
+  background: $color-background;
+  color: $color-text;
+}
+span, body div, p, ul, li, tr, th, td {
+  font-weight: 300;
+}
+button, input, textarea, label {
+  font-family: $font-family;
+  font-weight: 300;
+  color: $color-text;
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+}
+input[type=number] {
+  -moz-appearance: textfield;
+}
+button {
+  border: none;
+  background: transparent;
+  -webkit-appearance: none;
+  outline: none;
+  font-size: 1rem;
+  cursor: pointer;
+}
+input, textarea {
+  border: 1px solid $color-border;
+  border-radius: $border-radius;
+  outline: none;
+  background-color: transparent;
+  font-size: 14px;
+  padding: 0 10px;
+  -webkit-appearance: none;
+  &:focus {
+    border: 1px solid $color-border-focus;
+  }
+  &::placeholder {
+    font-size: 1rem;
+    color: $color-text-placeholder;
+  }
+}
+input {
+  height: 40px;
+}
+textarea {
+  padding: 10px;
+  appearance: none;
+  resize: none;
+  line-height: 1.5;
+}
+input:disabled, select:disabled {
+  opacity: 0.7;
+  cursor: not-allowed;
+}
+a {
+  color: $color-main;
+  text-decoration: underline;
+}
+b, strong, h1, h2, h3, h4 {
+  font-weight: 400;
+}
+img {
+  max-width: 100%;
+  height: auto;
+  display: block;
+}
