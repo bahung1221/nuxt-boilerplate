@@ -107,7 +107,6 @@ const nuxtConfigs = {
       app: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
       chunk: ({ isDev }) => isDev ? '[name].[hash].js' : '[chunkhash].js',
     },
-    vendor: ['jquery'],
     /*
     ** You can extend webpack config here
     */
@@ -125,8 +124,6 @@ const nuxtConfigs = {
       // set shortcuts as global for bootstrap
       new webpack.ProvidePlugin({
         $: 'jquery',
-        jQuery: 'jquery',
-        'window.jQuery': 'jquery',
         dayjs: 'dayjs',
       }),
     ],

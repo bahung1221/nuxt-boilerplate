@@ -1,6 +1,5 @@
 <template>
   <div class="home-wrapp">
-
   </div>
 </template>
 
@@ -11,6 +10,7 @@ export default {
   components: {},
   i18n: { messages: i18n },
   methods: {},
+  mounted() {},
 }
 </script>
 
