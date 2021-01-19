@@ -1,8 +1,43 @@
 @import "tek_reset";
 @import "~assets/scss/variables";
-:lang(en) {
-  @import "lang/en";
+
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/assets/fonts/MyriadPro-Light.eot');
+  src: url('/assets/fonts/MyriadPro-Light.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/MyriadPro-Light.woff2') format('woff2'),
+  url('/assets/fonts/MyriadPro-Light.woff') format('woff'),
+  url('/assets/fonts/MyriadPro-Light.ttf') format('truetype');
+  font-weight: 300;
+  font-style: normal;
+  font-display: swap;
 }
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/assets/fonts/MyriadPro-Regular.eot');
+  src: url('/assets/fonts/MyriadPro-Regular.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/MyriadPro-Regular.woff2') format('woff2'),
+  url('/assets/fonts/MyriadPro-Regular.woff') format('woff'),
+  url('/assets/fonts/MyriadPro-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+@font-face {
+  font-family: 'Myriad Pro';
+  src: url('/assets/fonts/MyriadPro-Bold.eot');
+  src: url('/assets/fonts/MyriadPro-Bold.eot?#iefix') format('embedded-opentype'),
+  url('/assets/fonts/MyriadPro-Bold.woff2') format('woff2'),
+  url('/assets/fonts/MyriadPro-Bold.woff') format('woff'),
+  url('/assets/fonts/MyriadPro-Bold.ttf') format('truetype');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+// :lang(en) {
+//   @import "lang/en";
+// }
 :lang(vi) {
   @import "lang/vi";
 }

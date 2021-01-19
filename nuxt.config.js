@@ -12,6 +12,7 @@ const nuxtConfigs = {
   render: {
     fallback: false,
   },
+  ssr: false,
   telemetry: false,
   vue: {
     config: {
@@ -26,13 +27,14 @@ const nuxtConfigs = {
   ** Headers of the page
   */
   head: {
-    title: 'Site Title (REPLACE)',
+    title: 'Survey',
     meta: [
       { charset: 'utf-8' },
+      { hid: 'robots', name: 'robots', content: 'noindex, nofollow' },
       { name: 'viewport', content: 'width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no' },
-      { hid: 'description', name: 'description', content: 'Description (REPLACE)' },
-      { hid: 'og:title', property: 'og:title', content: 'Site Title (REPLACE)' },
-      { hid: 'og:description', property: 'og:description', content: 'Description (REPLACE)' },
+      { hid: 'description', name: 'description', content: 'Takahiro survey' },
+      { hid: 'og:title', property: 'og:title', content: 'Survey' },
+      { hid: 'og:description', property: 'og:description', content: 'Takahiro survey' },
     ],
     link: [
       { rel: 'icon', type: 'image/x-icon', href: '/favicon.png' },
@@ -56,6 +58,7 @@ const nuxtConfigs = {
   plugins: [
     '@@plugins/http.js',
     '@@plugins/mock',
+    { src: '@@plugins/nuxt-client-init.js', ssr: false },
     '@@plugins/time.js',
     '@@plugins/common.js',
     { src: '@@plugins/directives.js', ssr: false },
@@ -68,9 +71,9 @@ const nuxtConfigs = {
     'nuxt-i18n',
     '@nuxtjs/style-resources',
     '@nuxtjs/redirect-module',
-    ['@nuxtjs/google-analytics', {
-      id: process.env.GA_ID,
-    }],
+    // ['@nuxtjs/google-analytics', {
+    //   id: process.env.GA_ID,
+    // }],
   ],
 
   axios: {
@@ -131,10 +134,10 @@ const nuxtConfigs = {
 
   i18n: {
     locales: [
-      {
-        code: 'en',
-        iso: 'en',
-      },
+      // {
+      //   code: 'en',
+      //   iso: 'en',
+      // },
       {
         code: 'vi',
         iso: 'vi',

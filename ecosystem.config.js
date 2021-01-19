@@ -8,7 +8,7 @@ process.on('SIGINT', () => {
 module.exports = {
   apps: [
     {
-      name: `projectname-${process.env.NODE_ENV} (REPLACE)`,
+      name: `takahiro-survey-${process.env.NODE_ENV}`,
       script: './server/index.js',
       error_file: './logs/err.log',
       out_file: './logs/out.log',
