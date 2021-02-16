@@ -1,7 +1,7 @@
 import * as common from '@/utils/common'
 import { setClient } from '@/utils/http'
 
-export default function({ $axios }) {
+export default function({ $axios, res }) {
   $axios.defaults.timeout = 20000
 
   $axios.onRequest(config => {
@@ -13,7 +13,7 @@ export default function({ $axios }) {
       // only accept on server side
       const resCookie = response.headers['set-cookie']
       if (resCookie) {
-        response.setHeader('Set-Cookie', resCookie)
+        res.setHeader('Set-Cookie', resCookie)
       }
     }
 

@@ -83,10 +83,10 @@ const nuxtConfigs = {
   },
 
   /*
-  ** Style resources loader for load global variables, mixins
-  */
+   ** Style resources loader for load global variables, mixins
+   */
   styleResources: {
-    scss: ['./assets/scss/*.scss'],
+    scss: ['./assets/scss/mixins.scss', './assets/scss/variables.scss'],
   },
 
   redirect: [
